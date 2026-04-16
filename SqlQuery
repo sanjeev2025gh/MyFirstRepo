@@ -1,0 +1,7 @@
+
+alter proc getAllEmployeeDetails
+ 
+as
+
+Select emp.*, DepName, DesName from Employee as emp inner join Department as dep on emp.DepId = dep.DepId
+ inner join Designation as des on emp.DepId = des.DesId
